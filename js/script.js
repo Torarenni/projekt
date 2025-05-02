@@ -2,8 +2,6 @@
 
 const btns = document.querySelectorAll('.scenes button'); 
 const divs = document.querySelectorAll('.scenes div'); 
-let text; 
-let paragraph; 
 const choices = [];
 
 
