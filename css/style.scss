@@ -1,0 +1,143 @@
+@use 'partial';
+
+/*Generel styling*/
+* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: partial.$paragraph-font;
+    background-color: partial.$background-color;
+  }
+
+  p,a {
+    font-size: 1.2em;
+}
+
+p{
+    padding: 0 3em 1.5em 3em;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: partial.$heading-font;
+    font-weight: 300;
+    text-align: center;
+    padding: 1em;
+} 
+
+h1{
+    font-size: 2.3em;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+img{
+    width: 100%;
+}
+
+/*styling som snakker sammen med JavaScript*/
+.hidden {
+  display: none;
+}
+
+ 
+  /* Styling af headeren og navigation */
+  nav{
+    background-color: partial.$header-color;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        li{
+            padding: 1em
+        }
+
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+}
+
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero article {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .hero figure {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero img {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Styling af knapper */
+  button {
+    @include partial.btn;
+  }
+  .btn {
+    @include partial.btn;
+  }
+  
+  /* Styling af info-section */
+  .info {
+    display: flex;
+    padding: 2rem;
+    background-color: #f9e4e7;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .info figure {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  /*styling af img*/
+  .info figure img {
+    width: 100%;
+    height: 100%;
+  }
+  .info article {
+    flex: 2;
+  }
+
+  [id^="box"] img {
+    @include partial.img-box;
+  }
+  
+  /* Footer */
+  footer.support-info {
+    background-color: #d3f0d8;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer.support-info p {
+    margin: 0.2em 0;
+  }
+
+  

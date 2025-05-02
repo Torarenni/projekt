@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Læringsunivers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+         <ul>
+             <li><a href="index.html">Forside</a></li>
+             <li><a href="univers.html">Læringsunivers</a></li>
+         </ul>
+    </nav>
+  </header> 
+  <main>
+    <div class="scenes">
+      <!-- Scene 1 -->
+      <div id="box0">
+        <p>Er du klar til at lære om sikker brug af sociale medier?</p>
+        <button id="c0">Ja det er jeg</button>
+      </div>
+      <!-- Scene 1, introduktion til Sille -->
+      <div id="box0-1" class="hidden">
+        <p>Sille er 13 år gammel, og har netop lige fået lov til at få sociale medier. Men hvordan sætter man hendes profiler op så de er så sikre som overhoved muligt? Det vil du lære nu.</p>
+        <p>Du skal igennem 2 emner: password og to-trins-faktor. Er du klar?</p>
+        <button id="c01">Ja det er jeg</button>
+        <img src="img/billed6.jpeg" alt="pige som kigger på sin telefon tegnet i vandfarver">
+      </div>
+      <!-- Scene 2, vælg en sikker adgangskode -->
+      <div id="box1" class="hidden">
+          <p>Hvilken adgangskode vælger du til Sille som den sikreste?</p>
+          <button id="c1">Si11eElsker$lik! </button>
+          <button id="c2">sille12</button>
+          <button id="c3">sille1234</button>
+          <img src="img/adgangskode-grafik.png" alt="infografik om sikker adgangskoder">
+      </div>
+      <!-- Scene 3, rigtig svar, sikker adgangskode + er du sikker?-->
+      <div id="box2-1" class="hidden">
+          <p>Godt valg! Den kode er nemlig den mest sikre, fordi den blander uforudsigelighed, tal, specialtegn og veksler mellem store og små bogstaver.</p>    
+          <button id="c4">Lad os komme videre</button>
+      </div>
+
+      <div id="box2-2" class="hidden">
+            <p>Argh er du helt sikker på det?</p> 
+            <button id="restart">Nej, lad mig lige prøve igen</button>
+            <button id="c5">Ja, jeg er helt sikker</button>     
+      </div>
+
+      <div id="box2-3" class="hidden">
+          <button id="restart">Lad mig prøve igen</button>  
+      </div>
+
+      <div id="box2-4" class="hidden">
+        <p>Åh nej, den kode er ikke sikker. Silles profil er blevet hacket og du er ikke lykkedes med at lave en sikker profil...</p>    
+        <button id="restart">Lad mig prøve igen</button>
+        <img src="img/hacket-grafik.png" alt="grafik som viser en hacket telefon">
+      </div>
+
+      <!-- Scene 4, 2 trins faktor + hacket profil-->
+      <div id="box3" class="hidden">
+        <p>Du mangler nu kun et sidste step for at færdiggøre Silles profil. Vælger du at bruge to-trins-faktor?</p>    
+        <button id="c6">Ja det gør jeg</button>
+        <button id="c7">Nej det behøver vi ikke have</button>
+        <img src="img/totrinsfaktor-grafik.png" alt="infografik om to-trins-faktor">
+      </div>
+
+      <div id="box3-1" class="hidden">
+        <p>Super, nu har du opsat den sikreste profil til Sille, og hun kan nu roligt begynde at bruge sociale medier.</p>    
+        <button id="c8">Yes!Lad os komme videre</button> 
+      </div>
+
+      <div id="box3-2" class="hidden">
+        <p>Din profil er nu dannet og Sille kan bruge sine sociale medier, uden to-trins-faktor</p>
+        <button id="c9">Yes!Lad os komme videre</button> 
+      </div>
+       
+      <!-- Scene 5-1, hacket uden to-trins-faktor-->
+      <div id="box4" class="hidden">
+        <p>3 måneder senere kan Sille pludselig ikke komme ind på sin profil. Hendes kontaktoplysninger er blevet ændret og fordi hun ikke havde to-trins-faktor, var der intet der stoppede hackeren fra at knække hendes kodeord og overtage hendes profil...</p>    
+        <p>Du har desværre ikke fået lavet en sikker nok profil...</p>
+        <button id="restart">Lad mig prøve igen</button>
+        <img src="img/hacket-grafik.png" alt="grafik som viser en hacket telefon">
+      </div>
+       
+      <!-- Scene 5-2, hacket uden to-trins-faktor- afslutning-->
+      <div id="box4-2" class="hidden">
+        <p>3 måneder senere modtager Sille en mail omkring mistænkeligt login på hendes profil. Hun skynder sig at vise det til jer, hendes mor og far, og sammen får i ændret adgangskoden, så hende profil igen er sikker.</p> 
+        <p>Du har nu den rette viden for sikker opsætning af profiler på sociale medier - godt gået!</p>   
+        <button id="restart">Lad mig prøve igen</button>
+        <img src="img/mail-grafik.png" alt="grafik af mail om to trins faktor">   
+      </div>
+    </div>
+  </main>
+      
+  <footer class="support-info">
+    <p>Support:</p>
+    <p>tlf. 11 22 33 44</p>
+    <p>man-fre: 7-10</p>
+    <p>lør-søn: lukket</p>
+  </footer>
+</body>
+</html>

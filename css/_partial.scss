@@ -1,0 +1,28 @@
+/*Farvepalette, variabler*/
+$primary-color: #FFE3E3;
+$btn-color: #789DBC;
+$footer-color:#C9E9D2;
+$header-color:#C9E9D2;
+$background-color:#FEF9F2;
+$heading-font: 'Montserrat';
+$paragraph-font: 'Montserrat';
+
+/*mixins*/
+@mixin btn($bg-color: $btn-color){
+    background-color: $bg-color;
+    padding: 0.8em;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    display:block;
+    text-align: center;
+    width: 30vw; //viewport view
+    margin: 0 auto 1.5em auto;
+}
+
+@mixin img-box {
+    max-width: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 8px;
+  }
